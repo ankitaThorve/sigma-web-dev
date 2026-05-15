@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline and Block Elements - HTML</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p>Het I am Para</p>
+    <a href="http://www.google.com">Google</a>
+    <div>This is a block element</div>
+    <span>I am span and I am inline</span>
+    <a href="">yes he is inline</a>
+
+    <!-- Quick Quiz:
+    Without using br tag, write a vertically aligned form asking for name, city and pincode of a user.
+    Everyone must comment -->
+
+    <form action="" method="post">
+      <div>
+        <label for="username">Your Name: </label>
+        <input type="text" name="name" id="username"  required autofocus/>
+      </div>
+      <div>
+        <label for="cityname">City: </label>
+        <input type="text" name="city" id="cityname"  required/>
+      </div>
+      <div>
+        <label for="pincode">Pincode:</label>
+        <input type="text" inputmode="numeric" maxlength="6" pattern="[0-9]{6}" placeholder="110001" required>
+      </div>
+    </form>
+  </body>
+</html>
