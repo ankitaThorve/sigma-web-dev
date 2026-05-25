@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specificity & Cascade</title>
+    <style>
+      .yellow {
+        color: yellow;
+      }
+      .cpurple {
+        color: purple;
+      }
+      .cred {
+        color: red !important;
+      }
+      h1 {
+        color: aqua;
+      }
+      [data-x=a]{
+        background-color: antiquewhite;
+      }
+      /* The secificity of this selector is 1 + 10 + 10 + 10 + 10 = 41 */
+      a.harryClass.rohan-class[href]:hover{
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 style="color: blue;" class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+  </body>
+</html>
