@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1 - Pure HTML Media Player</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- You are given 12 files; 6 audio and 6 video.
+    Design a website using HTML only which shows these 12 files.
+    1.mp3, 2.mp3 .... 6.mp3
+    1.mp4, 2.mp4 .... 6.mp4 -->
+    <header>
+      <nav>
+        <li>Home</li>
+        <li>About</li>
+        <li>Collection</li>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Here the Media Player List begins</h1>
+        <div class="audio">
+        <h2>Audios are here</h2>
+        <ol>
+          <li><audio src="./assets/audio/1.mp3"controls></audio></li>
+          <!-- <li><audio src="./assets/audio/2.mp3"controls></audio></li> -->
+          <li><audio src="./assets/audio/3.mp3"controls></audio></li>
+          <li><audio src="./assets/audio/4.mp3"controls></audio></li>
+          <li><audio src="./assets/audio/5.mp3"controls></audio></li>
+          <!-- <li><audio src="./assets/audio/6.mp3"controls></audio></li> -->
+        </ol>
+        </div>
+        <div class="video">
+          <h2>Videos are here</h2>
+          <ol>
+            <li><video src="./assets/video/1.mp4" controls muted></video></li>
+            <li><video src="./assets/video/2.mp4" controls muted></video></li>
+            <li><video src="./assets/video/3.mp4" controls muted></video></li>
+            <li><video src="./assets/video/4.mp4" controls muted></video></li>
+            <li><video src="./assets/video/5.mp4" controls muted></video></li>
+            <li><video src="./assets/video/6.mp4" controls muted></video></li>
+          </ol>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
