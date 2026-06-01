@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on CSS Selectors</title>
+    <style>
+      /* .box:first-child {
+        background-color: red;
+      }
+       .box::first-line {
+        color: yellow;
+      } */
+      .boxes * {
+        border: 2px solid blueviolet;
+        color: rgb(149, 6, 54);
+      }
+      [data-color="primary"] {
+        margin-top: 45px;
+      }
+      p,
+      a,
+      .box,
+      [data-color="primary"] {
+        padding-top: 45px;
+      }
+
+      .box:nth-child(even) {
+        background-color: blue;
+      }
+      .box:nth-child(odd) {
+        background-color: rgb(171, 131, 209);
+      }
+
+      .box:nth-last-child(2) {
+        color: white;
+      }
+
+      .boxes::before {
+        content: "Ankita is good";
+      }
+      .boxes::after {
+        content: "Sigma Web Dev Course is also good";
+        color: red;
+      }
+
+      ::selection {
+        background-color: black;
+        color: aqua;
+      }
+
+      .box::first-letter {
+        color: rgb(29, 65, 15);
+        font-size: 45px;
+      }
+
+      input::placeholder{
+        color: rgb(158, 11, 216);
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+        excepturi itaque neque fugit mollitia quo aliquid, impedit, ratione
+        accusantium, magni aut dolores optio. Voluptatibus, fugit deleniti
+        impedit pariatur ipsum modi. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Explicabo ab quia placeat eum provident omnis id harum
+        earum necessitatibus magnam, natus, saepe reprehenderit optio. Ex
+        tenetur soluta alias cum dolores, fuga veritatis minima quas harum eum
+        inventore nihil asperiores sed aut beatae incidunt sequi voluptate
+        maiores. Voluptatem esse mollitia perspiciatis atque, ipsam maxime
+        aperiam ducimus accusamus voluptates harum in, amet animi nisi
+        obcaecati! Incidunt iste dicta aperiam nostrum nam doloribus recusandae,
+        architecto adipisci eos ex tenetur exerc officiis dolorem! Sunt aliquam,
+        voluptas cumque quam nesciunt natus ipsum autem maxime iste labore vel
+        temporibus quidem inventore praesentium, enim rem. Dolores nulla
+        similique quas eos pariatur odio, aliquam est ipsam dolor eum, velit
+        impedit culpa dolorem reprehenderit veritatis doloribus ratione ducimus
+        modi assumenda accusamus explicabo perspiciatis odit, provident enim.
+        Placeat at odit iure quae ipsum numquam provident, ad dignissimos
+        assumenda sapiente laboriosam veniam temporibus repellendus error ex
+        fuga eius ipsa, nisi necessitatibus incidunt perspiciatis dolores nobis.
+        Facilis reprehenderit praesentium architecto aut sed fugiat, natus ipsa
+        sunt illum nihil dicta magni voluptas harum ex animi dignissimos
+        accusantium atque esse quos delectus enim dolorum blanditiis sequi est!
+      </div>
+      <div class="box" data-color="primary">Hey I am a box</div>
+      <div class="box">Hey I am a box</div>
+      <input type="text" name="" id="" placeholder="Type your name" />
+    </div>
+  </body>
+</html>
