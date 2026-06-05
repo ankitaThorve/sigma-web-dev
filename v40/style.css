@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #4a4466;
+  color: #fff;
+  height: 60px;
+  font-size: 30px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+display: flex;
+}
+
+ul li{
+  float: right;
+}
+
+ul li a {
+  display: block;
+  padding: 20px 18px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
